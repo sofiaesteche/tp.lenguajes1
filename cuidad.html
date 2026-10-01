@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>San Severo del Valle - La Ciudad</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <header>
         <h1>San Severo del Valle</h1>
-        <p>Naturaleza, tradición y confort en un solo lugar.</p>
+        <p><em>Naturaleza, tradición y confort en un solo lugar.</em></p>
         
         <nav>
             <ul>
@@ -23,32 +24,55 @@
     <main>
 
         <section>
-            <h2>La Ciudad Hoy: Identidad y Entorno</h2>
-            <p>San Severo del Valle es una ciudad próspera y pujante de unos 80.000 habitantes, ubicada al pie de las sierras. Nació a fines del siglo XIX como un asentamiento productivo y evolucionó hasta convertirse en un centro turístico y cultural referente de la región.</p>
+            <h2 class="titulo-seccion">La Ciudad Hoy: Identidad y Entorno</h2>
+            <p class="subtitulo-seccion">Conocé la historia, el desarrollo urbano y el espíritu de nuestra comunidad al pie de las sierras.</p>
             
-            <img src="ciudad antes y despues.jpg" alt="Comparativa de la ciudad de San Severo del Valle en sus inicios y en la actualidad">
+            <div class="grilla-tarjetas">
+                <!-- Tarjeta 1: Entorno y Antes/Después -->
+                <article class="tarjeta">
+                    <div class="fotos-tarjeta">
+                        <img src="img/ciudad antes y despues.jpg" alt="Comparativa de la ciudad de San Severo del Valle en sus inicios y en la actualidad">
+                    </div>
+                    <div class="info-tarjeta">
+                        <h3>Identidad y Evolución</h3>
+                        <p>San Severo del Valle es una ciudad próspera y pujante de unos 80.000 habitantes, ubicada al pie de las sierras. Nació a fines del siglo XIX como un asentamiento productivo y evolucionó hasta convertirse en un centro turístico y cultural referente de la región.</p>
+                        <p>Es un núcleo urbano actualizado y limpio: cuenta con avenidas pavimentadas con bulevares arbolados, centros comerciales abiertos, excelente conectividad, iluminación LED y servicios de primer nivel. Sin embargo, su mayor orgullo es haber crecido en total armonía con su entorno natural, cuidando el Bosque de los Arrayanes Serranos, sus especies autóctonas y la fauna local que habita en las reservas circundantes.</p>
+                        <figurecaption>Evolución histórica y urbana de la localidad.</figurecaption>
+                    </div>
+                </article>
 
-            <p>Es un núcleo urbano actualizado y limpio: cuenta con avenidas pavimentadas con bulevares arbolados, centros comerciales abiertos, excelente conectividad, iluminación LED y servicios de primer nivel. Sin embargo, su mayor orgullo es haber crecido en total armonía con su entorno natural, cuidando el Bosque de los Arrayanes Serranos, sus especies autóctonas y la fauna local que habita en las reservas circundantes.</p>
-            
-            <p>En el plano institucional, la identidad del distrito quedó fuertemente ligada a la gestión del intendente Don Belisario Benítez, quien a mediados del siglo XX impulsó las primeras normativas de preservación ambiental y priorizó la protección del bosque. Desde aquellos tiempos, y como un legado que definió la esencia del lugar, la comunidad ha mantenido intacta esa forma de vivir, equilibrando el progreso urbano con el profundo respeto por la naturaleza.</p>
-            
-            <img src="belisario benitez.jpg" alt="Retrato histórico de Don Belisario Benítez">
-        </section>
+                <!-- Tarjeta 2: Legado Institucional -->
+                <article class="tarjeta">
+                    <div class="fotos-tarjeta">
+                        <img src="img/belisario benitez.jpg" alt="Retrato histórico de Don Belisario Benítez">
+                    </div>
+                    <div class="info-tarjeta">
+                        <h3>Legado Institucional</h3>
+                        <p>En el plano institucional, la identidad del distrito quedó fuertemente ligada a la gestión del intendente Don Belisario Benítez, quien a mediados del siglo XX impulsó las primeras normativas de preservación ambiental y priorizó la protección del bosque.</p>
+                        <p>Desde aquellos tiempos, y como un legado que definió la esencia del lugar, la comunidad ha mantenido intacta esa forma de vivir, equilibrando el progreso urbano con el profundo respeto por la naturaleza.</p>
+                        <figurecaption>Intendente Don Belisario Benítez, pionero de la preservación ambiental.</figurecaption>
+                    </div>
+                </article>
 
-        <section>
-            <h2>Clima</h2>
-            <article>
-                <h3>Clima Serrano</h3>
-                <p>Presenta un clima templado serrano ideal para disfrutar todo el año. Los veranos son cálidos e ideales para la vida al aire libre (22 °C a 30 °C), mientras que los inviernos se presentan frescos con mañanas despejadas (4 °C a 15 °C).</p>
-            </article>
-        </section>
+                <!-- Tarjeta 3: Clima -->
+                <article class="tarjeta">
+                    <div class="info-tarjeta">
+                        <h3>Clima Serrano</h3>
+                        <p>Presenta un clima templado serrano ideal para disfrutar todo el año. Los veranos son cálidos e ideales para la vida al aire libre (22 °C a 30 °C), mientras que los inviernos se presentan frescos con mañanas despejadas (4 °C a 15 °C).</p>
+                        <figurecaption>Condiciones climáticas de la región.</figurecaption>
+                    </div>
+                </article>
 
-        <section>
-            <h2>Identidad y Tradición</h2>
-            <article>
-                <h3>Patrimonio Cultural y Festividades</h3>
-                <p>La identidad de San Severo del Valle se fundamenta en la convivencia pacífica entre las costumbres criollas de la región y el ritmo de la vida moderna. Este espíritu festivo y comunitario se refleja en la celebración de la Fiesta Nacional del Valle cada octubre, un evento icónico que reúne la música, las artesanías en cuero y platería, y las tradiciones que definen la cultura del valle.</p>
-            </article>
+                <!-- Tarjeta 4: Identidad y Tradición -->
+                <article class="tarjeta">
+                    <div class="info-tarjeta">
+                        <h3>Patrimonio Cultural y Festividades</h3>
+                        <p>La identidad de San Severo del Valle se fundamenta en la convivencia pacífica entre las costumbres criollas de la región y el ritmo de la vida moderna.</p>
+                        <p>Este espíritu festivo y comunitario se refleja en la celebración de la Fiesta Nacional del Valle cada octubre, un evento icónico que reúne la música, las artesanías en cuero y platería, y las tradiciones que definen la cultura del valle.</p>
+                        <figurecaption>Cultura y tradiciones locales.</figurecaption>
+                    </div>
+                </article>
+            </div>
         </section>
 
     </main>
