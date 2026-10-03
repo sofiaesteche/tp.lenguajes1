@@ -178,3 +178,69 @@ footer {
   margin-top: 3rem;
   font-size: 0.9rem;
 }
+
+/* ===== Contacto — información, horarios, aside e imagen ===== */
+
+/* Espaciado entre secciones del main */
+section {
+  padding: 1.5rem 0;
+}
+
+/* Direcciones de contacto */
+address {
+  font-style: normal;
+  line-height: 1.6;
+  margin-top: 1rem;
+  color: var(--texto-oscuro);
+}
+
+address a {
+  color: var(--terracota-secundario);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+address a:hover {
+  color: var(--dorado-detalle);
+}
+
+/* Lista de horarios (dl/dt/dd) */
+dl {
+  margin: 1rem 0;
+}
+
+dt {
+  font-weight: 700;
+  color: var(--verde-principal);
+  margin-top: 0.75rem;
+}
+
+dd {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--texto-suave);
+}
+
+/* Aside "¿Sabías que...?" */
+aside {
+  background-color: var(--blanco-caja);
+  border-left: 4px solid var(--dorado-detalle);
+  border-radius: var(--borde-redondeado);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: var(--sombra-suave);
+}
+
+aside h2 {
+  color: var(--verde-principal);
+  margin-bottom: 0.5rem;
+}
+
+/* Imagen de la oficina */
+#informacion img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--borde-redondeado);
+  box-shadow: var(--sombra-fuerte);
+  margin: 1.5rem 0;
+}
