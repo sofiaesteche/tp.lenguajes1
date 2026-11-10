@@ -247,6 +247,48 @@ aside h2 {
   box-shadow: var(--sombra-fuerte);
   margin: 1.5rem 0;
 }
+/* ===== Contacto: navbar activa y formulario ===== */
+
+header .navbar {
+  margin-top: 1rem;
+}
+
+header .navbar-nav {
+  gap: 0.5rem;
+}
+
+header .nav-link.active {
+  background-color: var(--dorado-detalle);
+  color: var(--verde-principal);
+}
+
+#formulario h2 {
+  color: var(--verde-principal);
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--verde-principal);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--dorado-detalle);
+  box-shadow: 0 0 0 0.2rem rgba(212, 163, 89, 0.3);
+}
+
+.btn-boton {
+  background-color: var(--terracota-secundario);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+}
+
+.btn-boton:hover {
+  background-color: var(--dorado-detalle);
+  color: var(--verde-principal);
+}
 /* == Index — imágenes sueltas en la sección de información == */
 
 #informacion img {
