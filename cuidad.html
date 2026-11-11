@@ -2,84 +2,112 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Severo del Valle - La Ciudad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
+<body class="bg-light text-dark">
 
-    <header>
-        <h1>San Severo del Valle</h1>
-        <p><em>Naturaleza, tradición y confort en un solo lugar.</em></p>
+    <header class="bg-dark text-white pt-4 pb-2">
+        <div class="container text-center mb-3">
+            <h1 class="display-4 fw-bold">San Severo del Valle</h1>
+            <p class="lead italic"><em>Naturaleza, tradición y confort en un solo lugar.</em></p>
+        </div>
         
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciudad.html">La Ciudad</a></li>
-                <li><a href="lugares.html">Lugares de Interés</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navSanSevero" aria-controls="navSanSevero" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navSanSevero">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center gap-lg-3">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active fw-bold" aria-current="page" href="ciudad.html">La Ciudad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares de Interés</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <main class="container my-5">
 
         <section>
-            <h2 class="titulo-seccion">La Ciudad Hoy: Identidad y Entorno</h2>
-            <p class="subtitulo-seccion">Conocé la historia, el desarrollo urbano y el espíritu de nuestra comunidad al pie de las sierras.</p>
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary">La Ciudad Hoy: Identidad y Entorno</h2>
+                <p class="fs-5 text-muted">Conocé la historia, el desarrollo urbano y el espíritu de nuestra comunidad al pie de las sierras.</p>
+            </div>
             
-            <div class="grilla-tarjetas">
-                <!-- Tarjeta 1: Entorno y Antes/Después -->
-                <article class="tarjeta">
-                    <div class="fotos-tarjeta">
-                        <img src="img/ciudad antes y despues.jpg" alt="Comparativa de la ciudad de San Severo del Valle en sus inicios y en la actualidad">
-                    </div>
-                    <div class="info-tarjeta">
-                        <h3>Identidad y Evolución</h3>
-                        <p>San Severo del Valle es una ciudad próspera y pujante de unos 80.000 habitantes, ubicada al pie de las sierras. Nació a fines del siglo XIX como un asentamiento productivo y evolucionó hasta convertirse en un centro turístico y cultural referente de la región.</p>
-                        <p>Es un núcleo urbano actualizado y limpio: cuenta con avenidas pavimentadas con bulevares arbolados, centros comerciales abiertos, excelente conectividad, iluminación LED y servicios de primer nivel. Sin embargo, su mayor orgullo es haber crecido en total armonía con su entorno natural, cuidando el Bosque de los Arrayanes Serranos, sus especies autóctonas y la fauna local que habita en las reservas circundantes.</p>
-                        <figurecaption>Evolución histórica y urbana de la localidad.</figurecaption>
-                    </div>
-                </article>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 d-flex align-items-stretch">
+                    <article class="card shadow-sm h-100">
+                        <figure class="m-0">
+                            <img src="img/ciudad antes y despues.jpg" class="card-img-top img-fluid" alt="Comparativa de la ciudad de San Severo del Valle en sus inicios y en la actualidad">
+                            <figcaption class="figure-caption text-center p-2 bg-light border-bottom">Evolución histórica y urbana de la localidad.</figcaption>
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title h4 text-secondary">Identidad y Evolución</h3>
+                            <p class="card-text">San Severo del Valle es una ciudad próspera y pujante de unos 80.000 habitantes, ubicada al pie de las sierras. Nació a fines del siglo XIX como un asentamiento productivo y evolucionó hasta convertirse en un centro turístico y cultural referente de la región.</p>
+                            <p class="card-text">Es un núcleo urbano actualizado y limpio: cuenta con avenidas pavimentadas con bulevares arbolados, centros comerciales abiertos, excelente conectividad, iluminación LED y servicios de primer nivel. Sin embargo, su mayor orgullo es haber crecido en total armonía con su entorno natural, cuidando el Bosque de los Arrayanes Serranos, sus especies autóctonas y la fauna local que habita en las reservas circundantes.</p>
+                        </div>
+                    </article>
+                </div>
 
-                <!-- Tarjeta 2: Legado Institucional -->
-                <article class="tarjeta">
-                    <div class="fotos-tarjeta">
-                        <img src="img/belisario benitez.jpg" alt="Retrato histórico de Don Belisario Benítez">
-                    </div>
-                    <div class="info-tarjeta">
-                        <h3>Legado Institucional</h3>
-                        <p>En el plano institucional, la identidad del distrito quedó fuertemente ligada a la gestión del intendente Don Belisario Benítez, quien a mediados del siglo XX impulsó las primeras normativas de preservación ambiental y priorizó la protección del bosque.</p>
-                        <p>Desde aquellos tiempos, y como un legado que definió la esencia del lugar, la comunidad ha mantenido intacta esa forma de vivir, equilibrando el progreso urbano con el profundo respeto por la naturaleza.</p>
-                        <figurecaption>Intendente Don Belisario Benítez, pionero de la preservación ambiental.</figurecaption>
-                    </div>
-                </article>
+                <div class="col-12 col-md-6 d-flex align-items-stretch">
+                    <article class="card shadow-sm h-100">
+                        <figure class="m-0">
+                            <img src="img/belisario benitez.jpg" class="card-img-top img-fluid" alt="Retrato histórico de Don Belisario Benítez">
+                            <figcaption class="figure-caption text-center p-2 bg-light border-bottom">Intendente Don Belisario Benítez, pionero de la preservación ambiental.</figcaption>
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title h4 text-secondary">Legado Institucional</h3>
+                            <p class="card-text">En el plano institucional, la identidad del distrito quedó fuertemente ligada a la gestión del intendente Don Belisario Benítez, quien a mediados del siglo XX impulsó las primeras normativas de preservación ambiental y priorizó la protección del bosque.</p>
+                            <p class="card-text">Desde aquellos tiempos, y como un legado que definió la esencia del lugar, la comunidad ha mantenido intacta esa forma de vivir, equilibrando el progreso urbano con el profundo respeto por la naturaleza.</p>
+                        </div>
+                    </article>
+                </div>
 
-                <!-- Tarjeta 3: Clima -->
-                <article class="tarjeta">
-                    <div class="info-tarjeta">
-                        <h3>Clima Serrano</h3>
-                        <p>Presenta un clima templado serrano ideal para disfrutar todo el año. Los veranos son cálidos e ideales para la vida al aire libre (22 °C a 30 °C), mientras que los inviernos se presentan frescos con mañanas despejadas (4 °C a 15 °C).</p>
-                        <figurecaption>Condiciones climáticas de la región.</figurecaption>
-                    </div>
-                </article>
+                <div class="col-12 col-md-6 d-flex align-items-stretch">
+                    <article class="card shadow-sm h-100">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="card-title h4 text-secondary">Clima Serrano</h3>
+                                <p class="card-text">Presenta un clima templado serrano ideal para disfrutar todo el año. Los veranos son cálidos e ideales para la vida al aire libre (22 °C a 30 °C), mientras que los inviernos se presentan frescos con mañanas despejadas (4 °C a 15 °C).</p>
+                            </div>
+                            <figure class="m-0 border-top pt-2">
+                                <figcaption class="figure-caption text-muted">Condiciones climáticas de la región.</figcaption>
+                            </figure>
+                        </div>
+                    </article>
+                </div>
 
-                <!-- Tarjeta 4: Identidad y Tradición -->
-                <article class="tarjeta">
-                    <div class="info-tarjeta">
-                        <h3>Patrimonio Cultural y Festividades</h3>
-                        <p>La identidad de San Severo del Valle se fundamenta en la convivencia pacífica entre las costumbres criollas de la región y el ritmo de la vida moderna.</p>
-                        <p>Este espíritu festivo y comunitario se refleja en la celebración de la Fiesta Nacional del Valle cada octubre, un evento icónico que reúne la música, las artesanías en cuero y platería, y las tradiciones que definen la cultura del valle.</p>
-                        <figurecaption>Cultura y tradiciones locales.</figurecaption>
-                    </div>
-                </article>
+                <div class="col-12 col-md-6 d-flex align-items-stretch">
+                    <article class="card shadow-sm h-100">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="card-title h4 text-secondary">Patrimonio Cultural y Festividades</h3>
+                                <p class="card-text">La identidad de San Severo del Valle se fundamenta en la convivencia pacífica entre las costumbres criollas de la región y el ritmo de la vida moderna.</p>
+                                <p class="card-text">Este espíritu festivo y comunitario se refleja en la celebración de la Fiesta Nacional del Valle cada octubre, un evento icónico que reúne la música, las artesanías en cuero y platería, y las tradiciones que definen la cultura del valle.</p>
+                            </div>
+                            <figure class="m-0 border-top pt-2">
+                                <figcaption class="figure-caption text-muted">Cultura y tradiciones locales.</figcaption>
+                            </figure>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>Sitio Web Turístico de San Severo del Valle</p>
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">Sitio Web Turístico de San Severo del Valle</p>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
