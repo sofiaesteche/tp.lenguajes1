@@ -4,82 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Severo del Valle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-
+ 
 <header>
     <h1>San Severo del Valle</h1>
     <p><em>Naturaleza, tradición y confort en un solo lugar.</em></p>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="ciudad.html">Ciudad</a></li>
-            <li><a href="lugares.html">Lugares de interes</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container justify-content-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares de interes</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
-
+ 
 <main>
     <section id="informacion">
         <h2 class="titulo-seccion">Bienvenidos a San Severo del Valle</h2>
         <p class="subtitulo-seccion">Naturaleza, tradición y confort.</p>
-
+ 
         <p>San Severo del Valle es una ciudad turistica que busca ofrecer a sus visitantes una experiencia única, combinando la belleza natural del valle con la riqueza cultural de la región. Nuestro objetivo es crear un espacio donde la tradición y el confort se encuentren, brindando a los turistas y residentes un lugar para disfrutar de la naturaleza, la historia y la gastronomía local.</p>
-
+ 
         <img src="img/ciudad.jpg" alt="Vista aérea de San Severo del Valle al atardecer, con el río y las montañas de fondo">
-
+ 
         <p>La ciudad combina la tranquilidad de sus espacios verdes con una zona céntrica llena de comercios, restaurantes y lugares históricos.</p>
-
+ 
         <img src="img/fiesta.jpg" alt="Feria de artesanías y escenario de la Fiesta Nacional del Valle en un parque, con montañas de fondo">
     </section>
-
+ 
     <section>
         <h2 class="titulo-seccion">Hitos de la ciudad</h2>
-
-        <div class="grilla-tarjetas">
-            <article class="tarjeta">
-                <div class="fotos-tarjeta"> 
+ 
+        <div class="row g-4 mb-5">
+            <div class="col-md-6 col-lg-4">
+                <article class="tarjeta h-100">
+                    <div class="fotos-tarjeta"> 
 <img src="img/faro.jpg" alt="Faro del Valle iluminado de noche, rodeado de la plaza y los comercios del centro histórico">
-                </div>
-                <div class="info-tarjeta">
-                    <h3>Faro del Valle</h3>
-                    <p>El Faro del Valle es uno de los monumentos históricos más importantes de San Severo del Valle. Se trata de una antigua torre de piedra del siglo XIX, restaurada y rodeada actualmente por una moderna plaza.</p>
-                </div>
-            </article>
+                    </div>
+                    <div class="info-tarjeta">
+                        <h3>Faro del Valle</h3>
+                        <p>El Faro del Valle es uno de los monumentos históricos más importantes de San Severo del Valle. Se trata de una antigua torre de piedra del siglo XIX, restaurada y rodeada actualmente por una moderna plaza.</p>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
-
+ 
     <section>
         <h2 class="titulo-seccion">Naturaleza y aventura</h2>
         <p class="subtitulo-seccion">Los alrededores de San Severo del Valle permiten disfrutar de diferentes actividades al aire libre, excursiones y espacios naturales.</p>
-
-        <div class="grilla-tarjetas">
-            <article class="tarjeta">
-                <div class="info-tarjeta">
-                    <h3>Parque de Tirolesas y Aventura</h3>
-                </div>
-            </article>
-
-            <article class="tarjeta">
-                <div class="info-tarjeta">
-                    <h3>Bosque Dorado y cosecha de frutos rojos</h3>
-                </div>
-            </article>
-
-            <article class="tarjeta">
-                <div class="info-tarjeta">
-                    <h3>Avistaje de cóndores y zorros</h3>
-                </div>
-            </article>
+ 
+        <div class="row g-4 mb-5">
+            <div class="col-md-6 col-lg-4">
+                <article class="tarjeta h-100">
+                    <div class="info-tarjeta">
+                        <h3>Parque de Tirolesas y Aventura</h3>
+                        <p>Deslizate sobre la canopia del bosque autóctono, con equipamiento de seguridad completo.</p>
+                    </div>
+                </article>
+            </div>
+ 
+            <div class="col-md-6 col-lg-4">
+                <article class="tarjeta h-100">
+                    <div class="info-tarjeta">
+                        <h3>Bosque Dorado y cosecha de frutos rojos</h3>
+                        <p>Caminata guiada con avistaje de zorros y aves, y cosecha de frambuesas y moras en fincas orgánicas con dulces artesanales.</p>
+                    </div>
+                </article>
+            </div>
+ 
+            <div class="col-md-6 col-lg-4">
+                <article class="tarjeta h-100">
+                    <div class="info-tarjeta">
+                        <h3>Avistaje de cóndores y zorros</h3>
+                        <p>Excursión por las sierras para observar cóndores en vuelo y zorros en su hábitat natural, con guías especializados.</p>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
 </main>
-
+ 
 <footer>
     <p>© San Severo del Valle</p>
 </footer>
-
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
