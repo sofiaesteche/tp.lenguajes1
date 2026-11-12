@@ -299,3 +299,14 @@ header .nav-link.active {
   box-shadow: var(--sombra-suave);
   margin: 1.5rem 0;
 }
+
+/* ===== Bootstrap: ajustes de tarjetas y navbar (index) ===== */
+
+.tarjeta .card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+header .navbar-nav .nav-link.active {
+  color: var(--verde-principal);
+}
